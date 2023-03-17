@@ -1,0 +1,249 @@
+.containerBody{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url('../../../assets/img/fondo3.png') !important;
+    object-fit: contain !important;
+    height: 1200px;
+}
+
+@media screen and (max-width: 992px) {
+
+.containerBody{
+    height: auto;
+}
+
+}
+
+
+.searchInput{
+    background-color: rgb(49, 49, 238);
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 3px solid rgb(9, 9, 36);
+}
+
+.containerInfoCard{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.containerPokeTable{
+    width:400px !important;
+    height:600px;
+    margin:25px;
+    text-align: center;
+}
+
+.containerPokeTable table{
+    margin:auto;
+    text-align:center;
+}
+
+.containerPokeTable table img{
+ width:40px;
+ height:35px;
+}
+
+:host ::ng-deep .mat-row:nth-child(odd){
+    background-color: #c9f7c7 !important;
+}
+
+
+
+tr:hover{
+    z-index: 99;
+    cursor:pointer !important;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) !important;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) !important;
+    color:blue;
+}
+
+.containerPokemonView{
+    background-color: blue;
+    width: 400px;
+    height:600px;
+}
+
+
+/** Card View Pokemon info **/ 
+
+
+
+.pokeCard{
+    animation: hop 2.5s infinite;
+    animation-timing-function: linear;
+    width:280px;
+    height:400px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 38px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 8px 8px 38px 0px rgba(0,0,0,0.46);
+    box-shadow: 8px 8px 38px 0px rgba(0, 0, 0, 0.46);
+    padding:5px;
+    border:solid rgb(32, 32, 135) 15px;
+    background-color: rgb(53, 53, 196);
+}
+
+@keyframes hop {
+    0%{
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    80%{
+        transform: translateY(25px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+.btnTake{
+    
+    background-color: rgb(117, 28, 28);
+    font-size: 22px;
+    padding: 22px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    color:white;
+    font-weight: bold;
+    display: flex;
+    border:none;
+    -webkit-box-shadow: 15px 15px 38px 0px rgba(29, 27, 27, 0.46);
+    -moz-box-shadow: 15px 15px 38px 0px rgba(49, 44, 44, 0.46);
+    box-shadow: 8px 8px 38px 0px rgba(61, 58, 58, 0.46);
+    cursor:pointer;
+    
+}
+
+.btnTake:hover{
+    background-color: rgb(204, 29, 29);
+}
+
+
+
+/** Team Table **/ 
+
+.containerTeam{
+    width: 400px;
+    height: 700px;
+}
+
+.containerTeam h1{
+    background-color: rgb(189, 18, 18);
+    clip-path: polygon(50% 0%, 100% 0, 95% 50%, 100% 100%, 0 99%, 5% 51%, 0 0);
+    filter: drop-shadow(0 0 0.75rem rgb(12, 2, 4));
+    text-align: center;
+    margin-top:25px;
+    padding:10px;
+    color:white;
+    font-weight: bold;
+
+}
+
+.containerTeamTable{
+    -webkit-box-shadow: 28px 28px 38px 0px rgb(255, 255, 255);
+    -moz-box-shadow: 28px 28px 38px 0px rgb(255, 250, 250);
+    box-shadow: 28px 28px 38px 0px rgba(255, 255, 255, 0.46);
+    width: 100%;
+    height: 120px;
+    margin:2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:5px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #dddbdb;
+}
+
+.blockLeftTeamTable{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin:auto;
+    padding:10px;
+}
+
+.blockLeftTeamTable h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blockLeftTeamTable img{
+    width: 100px;
+    height: 90px;
+    border-radius: 5px;
+    border-radius: 10px;
+
+}
+
+.blockRightTeamTable{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:25px;
+    align-items: center;
+}
+
+.blockRightTeamTable div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.blockRightTeamTable div h4{
+    font-weight: bold;
+}
+
+.blockRightTeamTable p{
+    font-weight: 500;
+}
+
+/** Alert Dialog **/
+
+.alertCardCompleteTeam{
+    background-color: white;
+    padding:25px;
+}
+
+.titleAlertDialog{
+    color:red;
+    font-weight: bold;
+}
+
+.btnCloseDialog{
+    margin:15px;
+    background-color: #dddbdb;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.containerBtnsDialog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btnCleanTeam{
+    margin:15px;
+    background-color: #d30e0e;
+    border-radius: 3px;
+    padding: 15px;
+    border:none;
+    color:white;
+    font-weight: bold;
+}

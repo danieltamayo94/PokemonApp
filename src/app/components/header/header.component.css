@@ -1,0 +1,25 @@
+.containerHeader{
+    background-color: #424242;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pokeBallImg{
+    width:80px !important;
+    height:80px !important;
+    margin-left:60px;
+}
+
+.pokeBallImg img:hover{
+    cursor:pointer;
+}
+
+.pokemonLogo{
+    width: 250px !important;
+    height: 100px !important;
+    margin: auto;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
